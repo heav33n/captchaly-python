@@ -51,7 +51,9 @@ class APIClient:
 
     def _send(self, task_type: str, task: dict) -> str:
         response = self.session.get(
-            url=self.HOST + f"/{task_type.lower()}", params=task
+            url=self.HOST + f"/{task_type.lower()}",
+            params=task,
+            headers={"Authorization": f"Bearer {self.api_key}"},
         )
         status_code = response.status_code
 
