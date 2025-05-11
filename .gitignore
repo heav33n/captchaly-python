@@ -2,4 +2,4 @@
 .venv/
 captchaly.egg-info/
 dist/
-test.py
+__pycache__/ test.py

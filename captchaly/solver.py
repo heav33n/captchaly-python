@@ -33,7 +33,7 @@ class APIClient:
         urllib3.disable_warnings()
 
     def _get_balance(self) -> str:
-        response = self.session.post(
+        response = self.session.get(
             url=self.HOST + "/account", params={"apikey": self.api_key}
         )
         status_code = response.status_code
@@ -50,7 +50,7 @@ class APIClient:
         return response.json().get("balance")
 
     def _send(self, task_type: str, task: dict) -> str:
-        response = self.session.post(
+        response = self.session.get(
             url=self.HOST + f"/{task_type.lower()}", params=task
         )
         status_code = response.status_code
