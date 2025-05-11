@@ -24,37 +24,37 @@ api = CaptchalyAPI(client_api="YOUR_API_KEY")
 # Solve captcha
 ### reCAPTCHA v2
 
-```python
+```python3
 token = api.recaptchav2(website_url="...", website_key="...")
 ```
 
 ### reCAPTCHA v3
 
-```python
+```python3
 token = api.recaptchav3(website_url="...", website_key="...", page_action="...", fast="OPTIONAL")
 ```
 
 ### Turnstile
 
-```python
+```python3
 token = api.turnstile(website_url="...", website_key="...", page_action="...", website_cdata="OPTIONAL")
 ```
 
 ### hCaptcha
 
-```python
+```python3
 token = api.hcaptcha(website_url="...", website_key="...", proxy_type="OPTIONAL", proxy_address="OPTIONAL", proxy_port="OPTIONAL", proxy_login="OPTIONAL", proxy_password="OPTIONAL")
 ```
 
 ### hCaptcha Enterprise
 
-```python
+```python3
 token = api.hcaptcha_enterprise(website_url="...", website_key="...", proxy_type="OPTIONAL", proxy_address="OPTIONAL", proxy_port="OPTIONAL", proxy_login="OPTIONAL", proxy_password="OPTIONAL")
 ```
 
 ### GeeTest v4
 
-```python
+```python3
 token = api.geetestv4(website_url="...", website_captcha_id="...")
 ```
 
