@@ -13,7 +13,7 @@ pip install captchaly
 ## Usage
 First, obtain the API Key from the dashboard in the [Captchaly Official Website](https://captchaly.com/dashboard) dashboard. Then, create a Captchaly instance:
 
-```
+```python3
 from captchaly import CaptchalyAPI
 
 api = CaptchalyAPI(client_api="YOUR_API_KEY")
